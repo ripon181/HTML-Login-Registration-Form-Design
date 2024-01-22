@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200&family=Poppins:wght@100;200;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;0,8..144,700;1,8..144,400&family=Rubik+Doodle+Shadow&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+}
+.bg-holder{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top:0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #001770, #b400ff73);
+}
+.welcome-text h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.welcome-text p{
+    text-align: justify;
+    padding: 25px;
+    line-height: 30px;
+}
+.welcome-text-animation{
+    background-image: linear-gradient(45deg,#231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 8s linear infinite;
+    display: inline-block;
+    
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+.right-side{
+    background-color: rgb(255, 245, 240);
+}
+.logo img{
+    width: 50%;
+}
+.divider{
+    margin: 2rem;
+}
+.driver-content-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(255, 245, 240);
+    font-size: .8rem;
+    font-weight: 500;
+    color: #001770;
+}
+.form-control{
+    padding: 11px;
+    border: none;
+    border: 2px solid #405c7cb8;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+}
+.form-control:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+    background-color: transparent;
+}
+.form-check-input:checked{
+    background-color: #b400ff;
+    border: none;
+    outline: none;
+}
+.form-check a{
+    color: #000;
+}
+.login-btn{
+    background: #b400ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+.register-test a{
+    color: #000;
+}

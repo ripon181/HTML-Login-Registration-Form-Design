@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200&family=Poppins:wght@100;200;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;0,8..144,700;1,8..144,400&family=Rubik+Doodle+Shadow&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/login-1-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Jost', sans-serif;
+}
+.form-container{
+    background: url('../images/login-1-form-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.form-container img{
+    width: 30%;
+}
+.form-label{
+    font-size: 18px;
+}
+.form-control{
+    padding: 11px;
+    border: none;
+    border-bottom: 2px solid #405c7cb8;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.form-control:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+    background-color: transparent;
+}
+.form-check-input:checked{
+    background-color: #f15a24;
+    border: none;
+    outline: none;
+}
+.form-check a{
+    color: #000;
+}
+input[type=submit]{
+    background-color: #f15a24;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.register-test a{
+    color: #000;
+}

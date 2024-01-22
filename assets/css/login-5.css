@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../images/login-5-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.ocean-wave {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #015871;
+}
+
+.wave {
+    background: url('../images/wave.svg');
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+    -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@-webkit-keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+@keyframes swell{
+    0%,100%{
+        transform: translate3d(0, -25px, 0);
+    }
+    50%{
+        transform: translate3d(0, 50px, 0);
+    }
+}
+@-webkit-keyframes swell{
+    0%,100%{
+        transform: translate3d(0, -25px, 0);
+    }
+    50%{
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+
+.form-2-wrapper {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(229,248,246,1) 70%, rgb(229 248 246 / 0%) 100%);
+    padding: 50px;
+    border-radius: 8px;
+}
+.logo img{
+    width: 50%;
+}
+.form-control{
+    padding: 11px;
+    border: none;
+    border-radius: inherit;
+    border-bottom: 2px solid #5499a7;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+}
+.form-control:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+    background-color: transparent;
+}
+.form-check-input:checked{
+    background-color: #5499a7;
+    border: none;
+    outline: none;
+}
+.form-check a{
+    color: #000;
+}
+.login-btn{
+    background: #5499a7;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.register-test a{
+    color: #000;
+}
+.social-login button{
+    border-radius: 30px;
+}
+.social-login button:hover{
+    background-color: #5499a7;
+}
